@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		0DC3812226E60DBD00E2E884 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3812126E60DBD00E2E884 /* AppDelegate.swift */; };
 		0DC3812426E60DBD00E2E884 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3812326E60DBD00E2E884 /* SceneDelegate.swift */; };
-		0DC3812626E60DBD00E2E884 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3812526E60DBD00E2E884 /* ViewController.swift */; };
+		0DC3812626E60DBD00E2E884 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3812526E60DBD00E2E884 /* ImageViewController.swift */; };
 		0DC3812926E60DBD00E2E884 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DC3812726E60DBD00E2E884 /* Main.storyboard */; };
 		0DC3812B26E60DC000E2E884 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DC3812A26E60DC000E2E884 /* Assets.xcassets */; };
 		0DC3812E26E60DC000E2E884 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DC3812C26E60DC000E2E884 /* LaunchScreen.storyboard */; };
@@ -38,7 +38,7 @@
 		0DC3811E26E60DBC00E2E884 /* CameraApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DC3812126E60DBD00E2E884 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DC3812326E60DBD00E2E884 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0DC3812526E60DBD00E2E884 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0DC3812526E60DBD00E2E884 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		0DC3812826E60DBD00E2E884 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0DC3812A26E60DC000E2E884 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DC3812D26E60DC000E2E884 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -99,12 +99,9 @@
 		0DC3812026E60DBC00E2E884 /* CameraApplication */ = {
 			isa = PBXGroup;
 			children = (
-				0DC3812126E60DBD00E2E884 /* AppDelegate.swift */,
-				0DC3812326E60DBD00E2E884 /* SceneDelegate.swift */,
-				0DC3812526E60DBD00E2E884 /* ViewController.swift */,
-				0DC3812726E60DBD00E2E884 /* Main.storyboard */,
-				0DC3812A26E60DC000E2E884 /* Assets.xcassets */,
-				0DC3812C26E60DC000E2E884 /* LaunchScreen.storyboard */,
+				0DC3815C26E60DE900E2E884 /* Storyboards */,
+				0DC3815B26E60DDC00E2E884 /* ViewController */,
+				0DC3815426E60DC900E2E884 /* Resources */,
 				0DC3812F26E60DC000E2E884 /* Info.plist */,
 			);
 			path = CameraApplication;
@@ -126,6 +123,33 @@
 				0DC3814526E60DC000E2E884 /* Info.plist */,
 			);
 			path = CameraApplicationUITests;
+			sourceTree = "<group>";
+		};
+		0DC3815426E60DC900E2E884 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0DC3812126E60DBD00E2E884 /* AppDelegate.swift */,
+				0DC3812326E60DBD00E2E884 /* SceneDelegate.swift */,
+				0DC3812A26E60DC000E2E884 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0DC3815B26E60DDC00E2E884 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0DC3812526E60DBD00E2E884 /* ImageViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		0DC3815C26E60DE900E2E884 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0DC3812726E60DBD00E2E884 /* Main.storyboard */,
+				0DC3812C26E60DC000E2E884 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DC3812626E60DBD00E2E884 /* ViewController.swift in Sources */,
+				0DC3812626E60DBD00E2E884 /* ImageViewController.swift in Sources */,
 				0DC3812226E60DBD00E2E884 /* AppDelegate.swift in Sources */,
 				0DC3812426E60DBD00E2E884 /* SceneDelegate.swift in Sources */,
 			);
@@ -437,6 +461,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CR2K7K85K7;
 				INFOPLIST_FILE = CameraApplication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,6 +480,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CR2K7K85K7;
 				INFOPLIST_FILE = CameraApplication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
